@@ -16,13 +16,105 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <style>
+            .red-text {
+              color: red;
+            }
+          
+            h2 {
+              font-family: Lobster, Monospace;
+            }
+          
+            p {
+              font-size: 16px;
+              font-family: Monospace;
+            }
+          
+            .thick-green-border {
+              border-color: green;
+              border-width: 10px;
+              border-style: solid;
+              border-radius: 50%;
+            }
+          
+            .smaller-image {
+              width: 100px;
+            }
+          </style>
     </head>
 
     <body>
         <header>
             <!-- place navbar here -->
         </header>
-        <main></main>
+        <main>
+            <div class="container-fluid">
+            <h2 class="red-text text-center">CatPhotoApp</h2>
+          
+            <p>Click here for <a href="#">cat photos</a>.</p>
+          
+            <a href="#"><img class="smaller-image thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+          
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" class="img-responsive" alt="Three kittens running towards the camera.">
+          
+
+            <div class="d-grid gap-2">
+                <button
+                    type="button"
+                    name=""
+                    id=""
+                    class="btn btn-primary"
+                >
+                    Like
+                </button>
+            </div>
+            
+            <div class="d-grid gap-2">
+                <button
+                    type="button"
+                    name=""
+                    id=""
+                    class="btn btn-info"
+                >
+                    Info
+                </button>
+            </div>
+            
+            <div class="d-grid gap-2">
+                <button
+                    type="button"
+                    name=""
+                    id=""
+                    class="btn btn-danger"
+                >
+                    Delete
+                </button>
+            </div>
+            
+            
+            <p>Things cats love:</p>
+            <ul>
+              <li>cat nip</li>
+              <li>laser pointers</li>
+              <li>lasagna</li>
+            </ul>
+            <p>Top 3 things cats hate:</p>
+            <ol>
+              <li>flea treatment</li>
+              <li>thunder</li>
+              <li>other cats</li>
+            </ol>
+            <form action="https://freecatphotoapp.com/submit-cat-photo">
+              <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+              <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+              <label><input type="checkbox" name="personality"> Loving</label>
+              <label><input type="checkbox" name="personality"> Lazy</label>
+              <label><input type="checkbox" name="personality"> Crazy</label>
+              <input type="text" placeholder="cat photo URL" required>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </main>
         <footer>
             <!-- place footer here -->
         </footer>
