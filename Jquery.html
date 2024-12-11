@@ -16,13 +16,59 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+
+        <!-- Animate.css -->
+        <link 
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+            rel="stylesheet"
+        />
+
+        <style>
+            /* Bounce animation */
+            @keyframes bounce {
+                0%, 100% {
+                    transform: translateY(0);
+                }
+                50% {
+                    transform: translateY(-15px);
+                }
+            }
+
+            .bounce {
+                animation: bounce 1s ease infinite;
+            }
+        </style>    
     </head>
 
     <body>
+        
         <header>
             <!-- place navbar here -->
         </header>
+
         <main>
+            <!-- jQuery Script -->
+            <script src="https://code.jquery.com/jquery-3.6.4.min.js" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+            <script>
+                $(document).ready(function () {
+
+
+                    setTimeout(function () {
+                        $("#target3")
+                        .addClass("animate__animated animate__fadeOut")
+                        .fadeOut(1000);
+                    })
+                    
+
+                    $("button").addClass("animated bounce");
+                    
+                    setInterval(function () {
+                        $(".alert").effect("shake", {times: 3, distance: 5}, 300);
+                    }, 10000)
+                });
+            </script>
+
             <!-- Code below this line should not be changed! -->
             <div 
             class="container-fluid"
@@ -43,25 +89,24 @@
                             <div 
                                 class="alert alert-secondary"
                                 id="alert-right"
-                                id="target1"
                             >
                                 <button
                                     type="button"
-                                    class="btn btn-default target"
+                                    class="btn btn-secondary target"
                                 >
                                     #target1
                                 </button>
                             
                                 <button
                                     type="button"
-                                    class="btn btn-default target"
+                                    class="btn btn-secondary target"
                                     id="target2"
                                 >
                                     #target2
                                 </button>
                                 <button
                                     type="button"
-                                    class="btn btn-default target"
+                                    class="btn btn-secondary target"
                                     id="target3"
                                 >
                                     #target3
@@ -79,7 +124,7 @@
                             >
                                 <button
                                     type="button"
-                                    class="btn btn-default target"
+                                    class="btn btn-secondary target"
                                     id="target4"
                                 >
                                     #target4
@@ -87,7 +132,7 @@
                             
                                 <button
                                     type="button"
-                                    class="btn btn-default target"
+                                    class="btn btn-secondary target"
                                     id="target5"
                                 >
                                     #target5
@@ -95,7 +140,7 @@
                             
                                 <button
                                     type="button"
-                                    class="btn btn-default target"
+                                    class="btn btn-secondary target"
                                     id="target6"
                                 >
                                     #target6
