@@ -37,6 +37,9 @@
             .bounce {
                 animation: bounce 1s ease infinite;
             }
+            .custom-red {
+                color: red;
+            }
         </style>    
     </head>
 
@@ -53,19 +56,27 @@
             <script>
                 $(document).ready(function () {
 
+                    $("#target1").css("color", "red");
+                    $("#target1").prop("disabled", true);
+                    $("#target4").html("<em>#target4</em>");
+                    $("#target4").remove();
 
-                    setTimeout(function () {
-                        $("#target3")
-                        .addClass("animate__animated animate__fadeOut")
-                        .fadeOut(1000);
-                    })
-                    
+                    $("#target2").appendTo("#alert-right");
+                    $("#target5").clone().appendTo("#alert-left");
+                    $("#target1").parent().css("background-color", "red");
+                    $("#alert-left").children().css("color", "green");
+                    $("#alert-right").children().css("color", "orange");
 
-                    $("button").addClass("animated bounce");
+                    $(".target:nth-child(2)").addClass("animated bounce");
+                    $(".target:even").addClass("animate__shakeX");
+                    $("button").addClass("animate__animated");
+
+                    $("body").addClass("animate__animated animate__hinge");
+                   // $(".btn").addClass("animate__shakeX");
+                   // $("#target1").removeClass("btn-secondary").addClass("btn-primary");
+                   // $("button").removeClass("btn-secondary"); 
+
                     
-                    setInterval(function () {
-                        $(".alert").effect("shake", {times: 3, distance: 5}, 300);
-                    }, 10000)
                 });
             </script>
 
@@ -88,11 +99,12 @@
                             <h4>#Left-alert</h4>
                             <div 
                                 class="alert alert-secondary"
-                                id="alert-right"
+                                id="alert-left"
                             >
                                 <button
                                     type="button"
                                     class="btn btn-secondary target"
+                                    id="target1"
                                 >
                                     #target1
                                 </button>
@@ -117,10 +129,10 @@
                         <div
                             class="col-sm-6"
                         >
-                            <h4>#Right-alert</h4>
+                            <h4>#right-alert</h4>
                             <div 
                                 class="alert alert-secondary"
-                                id="alert-left"
+                                id="alert-right"
                             >
                                 <button
                                     type="button"
