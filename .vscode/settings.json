@@ -1,0 +1,68 @@
+{
+    "editor.fontFamily": "Cascadia Code, Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 14,
+    "editor.lineHeight": 22,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.minimap.enabled": false,
+  
+    "files.autoSave": "onWindowChange",
+    "files.autoSaveDelay": 1000,
+  
+    // Specific settings for HTML, CSS, JavaScript, Sass, Bootstrap
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnType": true,
+      "editor.tabSize": 2
+    },
+  
+    "[css]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnType": true,
+      "editor.tabSize": 2
+    },
+  
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnType": true,
+      "editor.tabSize": 2
+    },
+  
+    "[scss]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnType": true,
+      "editor.tabSize": 2
+    },
+  
+    "[sass]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnType": true,
+      "editor.tabSize": 2
+    },
+  
+    // IntelliSense Enhancements
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "recentlyUsed",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+  
+    // Error Highlighting
+    "editor.errorLens.enabled": true,
+  
+    // Git Configuration
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+  
+    // Breadcrumbs
+    "breadcrumbs.enabled": true,
+  
+    // Theme and Icons
+    "workbench.colorTheme": "Material Theme Ocean High Contrast", 
+    "workbench.iconTheme": "eq-material-theme-icons-deepforest"
+  }
+  
