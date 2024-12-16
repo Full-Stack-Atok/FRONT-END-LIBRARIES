@@ -1,5 +1,16 @@
 {
-  "dependencies": {
-    "bootstrap": "^5.3.3"
+  "name": "front-end-libraries",
+  "version": "1.0.0",
+  "description": "This is where the fun start! \r Bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nunjucks": "^3.2.4",
+    "webpack-cli": "^5.1.4"
   }
 }
